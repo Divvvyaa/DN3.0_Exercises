@@ -1,0 +1,29 @@
+Financial Forecasting Tool
+1. Understand Recursive Algorithms
+Concept of Recursion:
+
+Recursion is a technique in which a function calls itself to solve a smaller instance of the same problem.
+It simplifies problems by breaking them down into smaller, more manageable subproblems.
+Recursion involves a base case (the simplest, smallest instance of the problem) and a recursive case (the larger problem expressed in terms of the smaller problem).
+Example of Recursion:
+A common example is the calculation of the factorial of a number:
+𝑛!=𝑛 × (𝑛−1)!
+0!=1
+
+
+2. Setup
+Create a Method to Calculate Future Value Using a Recursive Approach
+
+In financial forecasting, let's assume we want to predict the future value based on a constant growth rate. For simplicity, we'll assume a fixed annual growth rate.
+
+Future Value Calculation Formula:
+Future Value=Present Value×(1+Growth Rate)^Years
+4. Analysis
+Time Complexity:
+
+The time complexity of the recursive algorithm is O(n), where n is the number of years.
+This is because each call to the calculateFutureValue method reduces the number of years by 1, leading to n recursive calls.
+Optimizing the Recursive Solution:
+
+One way to optimize recursive solutions is through memoization, where we store the results of previous computations to avoid redundant calculations.
+However, in this particular problem, memoization isn't necessary as each subproblem is unique and not repeated.
